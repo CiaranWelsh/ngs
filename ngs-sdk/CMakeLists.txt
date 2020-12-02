@@ -7,5 +7,5 @@ set(
         )
 
 add_subdirectory(dispatch)
-#add_subdirectory(adapter)
+add_subdirectory(adapter)
 #add_subdirectory(language)

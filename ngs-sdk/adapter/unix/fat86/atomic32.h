@@ -25,9 +25,9 @@
 */
 
 #if _ARCH_BITS == 32
-#include "../i386/atomic32.h"
+#include "ngs/unix/i386/atomic32.h"
 #elif _ARCH_BITS == 64
-#include "../x86_64/atomic32.h"
+#include "ngs/unix/x86_64/atomic32.h"
 #else
 #error "_ARCH_BITS not defined to be 32 or 64"
 #endif
