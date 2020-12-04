@@ -27,7 +27,8 @@ endif ()
 
 
 
-
+install(TARGETS ngs-sdk DESTINATION lib)
+install(DIRECTORY ngs DESTINATION include)
 
 
 
