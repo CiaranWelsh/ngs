@@ -2,20 +2,21 @@ set(target ngs-adapt-c++)
 
 set(
         SOURCES
-        ReadCollectionItf
-        PileupItf
-        PileupEventItf
-        ReferenceItf
-        ReferenceSequenceItf
-        AlignmentItf
-        ReadGroupItf
-        ReadItf
-        FragmentItf
-        StatisticsItf
-        StringItf
-        Refcount
-        ErrorMsg
-        ErrBlock
+        ReadCollectionItf.cpp
+        PileupItf.cpp
+        PileupEventItf.cpp
+        ReferenceItf.cpp
+        ReferenceSequenceItf.cpp
+        AlignmentItf.cpp
+        ReadGroupItf.cpp
+        ReadItf.cpp
+        FragmentItf.cpp
+        StatisticsItf.cpp
+        StringItf.cpp
+        Refcount.cpp
+        ErrorMsg.cpp
+        ErrBlock.cpp
+        ErrBlock.hpp
 )
 
 # This library uses a macro to whether we're on 32/64 bit system

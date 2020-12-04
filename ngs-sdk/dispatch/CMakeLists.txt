@@ -24,6 +24,11 @@ set(SOURCES
 add_library(${target} STATIC ${SOURCES})
 target_include_directories(${target} PUBLIC "${NGS_SDK_INCLUDE_DIR}")
 
+# we add an object library so that we can compile
+# them later into ngs-sdk
+add_library(${target}-obj OBJECT ${SOURCES})
+target_include_directories(${target}-obj PUBLIC "${NGS_SDK_INCLUDE_DIR}")
+
 
 
 

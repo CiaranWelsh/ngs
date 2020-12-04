@@ -43,7 +43,7 @@ TARGETS =      \
 all std: $(TARGETS)
 
 clean:
-	@ rm -rf $(OBJDIR)/*
+	@ rm -rf $(OBJDIR)\
 	@ rm -f $(addprefix $(ILIBDIR)/$(LPFX),$(addsuffix *,$(INTLIBS))) \
 			$(addprefix $(LIBDIR)/$(LPFX),$(addsuffix *,$(EXTLIBS)))
 
