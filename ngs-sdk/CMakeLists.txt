@@ -4,7 +4,7 @@ set(
         NGS_SDK_INCLUDE_DIR
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>"
         "$<INSTALL_INTERFACE:include>"
-        )
+)
 
 add_subdirectory(dispatch)
 add_subdirectory(adapter)
@@ -20,9 +20,9 @@ add_library(ngs-sdk STATIC
 
 add_dependencies(ngs-sdk ngs-disp-obj ngs-bind-java-obj ngs-bind-python-obj ngs-bind-c++-obj)
 
-
-add_subdirectory(test)
-
+if (BUILD_TESTS)
+    add_subdirectory(test)
+endif ()
 
 
 

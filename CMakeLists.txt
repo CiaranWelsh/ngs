@@ -43,13 +43,10 @@ endif ()
 
 
 ########################################################
-#   dependencies
+#   options
 #
 
-
-
-
-
+option(BUILD_TESTS "build the tests" OFF)
 
 
 
